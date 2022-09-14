@@ -1,0 +1,43 @@
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title>TESTE-HTML</title>
+ </head>   
+ <body>
+   <h3>Preenchimento de informações</h3> 
+
+    <form method="post" action="/receber_dados">
+       <fieldset>
+            <legend>Formulário</legend>                                                                      
+             
+            <label for="nome">Nome completo:</label>
+            <input type="text" name="nome" /><br>
+
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" name="nascimento" /><br>
+
+            <label for="usertel">Telefone:</label>
+            <input type="tel" name="usertel" /><br>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" /><br>
+
+            <label for="sexo">Sexo:</label>
+              Masculino<input type="radio" name="sexo" value="Masc"/>                            
+              Feminino<input type="radio" name="sexo" value="Fem"/><br>
+            <div class="button">
+               <button type="reset">Limpar formulário</button>
+            </div>
+       </fieldset>
+       <div class="button">
+          <button type="submit" onclick="msg()">Enviar formulário</button>
+       </div>
+       <img src="C:\Users\laris\OneDrive\Área de Trabalho\TesteHTML\form.png" alt="imagem">
+    </form>
+    <script>
+        function msg() {
+          alert("Formulário enviado!");
+        }
+        </script>
+ </body>
+</html>
